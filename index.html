@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="handle">
+            <p class="template">
+                Lorem ipsum
+            </p>
+        </div>
+        <div class="box-line"></div>
+        <div class="profpic"></div>
+    </div>
+
+    <div class="isi">
+        <div id="sidebar">
+            <a href="#biodata">Biodata</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div id="contents">
+            <div class="content" id="biodata">
+                <div class="content-head">
+                    <div class="sideline"></div>
+                    <div class="content-title">
+                        <p>BIODATA</p>
+                    </div>
+                </div>
+                <div class="content-desc">
+                    <p>Name: Muhammad Kamal Shafi</p>
+                    <p>Age: 19</p>
+                    <p>Nationality: Indonesia</p>
+                </div>
+            </div>
+            <div class="content" id="education">
+                <div class="content-head">
+                    <div class="sideline"></div>
+                    <div class="content-title">
+                        <p>Education</p>
+                    </div>
+                </div>
+                <div class="content-desc">
+                    <p>2018 - 2022 (Expected)</p>
+                    <blockquote>Institut Teknologi Bandung</blockquote>
+                    <p>2015 - 2018</p>
+                    <blockquote>SMAN 1 Tangerang</blockquote>
+                </div>
+            </div>
+            <div class="content" id="contact">
+                <div class="content-head">
+                    <div class="sideline"></div>
+                    <div class="content-title">
+                        <p>CONTACT</p>
+                    </div>
+                </div>
+                <div class="content-desc">
+                    <a href="https://www.instagram.com/kamal_shafi/" target="_blank">
+                        <div class="contact-list">
+                            <img src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png">
+                            <p>kamal_shafi</p>
+                        </div>
+                    </a>
+                    <br>
+                    <a href="">
+                        <div class="contact-list">
+                            <img src="images/LINE_SOCIAL_Basic.png">
+                            <p>kamalshafi</p>
+                        </div>
+                    </a>
+                    <br>
+                    <a href="https://github.com/mastree" target="_blank">
+                        <div class="contact-list">
+                            <img src="images/GitHub-Mark-120px-plus.png">
+                            <p>mastree</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onscroll = function() {needToStick()};
+        
+        var sidebar = document.getElementById("sidebar");
+        var sticky = sidebar.offsetTop;
+        var contents = document.getElementById("contents");
+        
+        function needToStick() {
+            if (window.pageYOffset >= sticky) {
+                sidebar.classList.add("sticky");
+                contents.classList.add("centered");
+            } else {
+                sidebar.classList.remove("sticky");
+                contents.classList.remove("centered");
+            }
+        }
+    </script>
+</body>
+</html>
